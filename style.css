@@ -143,7 +143,7 @@ li p {
   #desktop {
     display: none;
   }
-  section {
+  div {
     position: relative;
     bottom: 52px;
     display: flex;
@@ -175,7 +175,7 @@ li p {
 
 @media (min-width: 768px) {
   h1 {
-    padding-left: 130px;
+    padding-left: 90px;
   }
   .link {
     padding-right: 130px;
@@ -187,7 +187,7 @@ li p {
     font-size: 18px;
     max-width: 420px;
   }
-  section {
+  div {
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -207,18 +207,18 @@ li p {
     z-index: 1;
   }
   hr {
-    width: 83%;
+    width: 85%;
   }
   main ul {
-    width: 83%;
-    column-gap: 120px;
-    grid-template-columns: 180px 180px;
+    width: 85%;
+    column-gap: 50px;
+    grid-template-columns: 200px 200px 200px;
     text-align: start;
   }
   h3 {
-    font-size: 48px;
+    font-size: 35px;
   }
   li p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
