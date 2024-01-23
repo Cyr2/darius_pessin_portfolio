@@ -203,22 +203,6 @@ li p {
   justify-content: center;
 }
 
-.views {
-  transition: 200ms;
-}
-
-.images:hover .large {
-  opacity: 30%;
-}
-
-.images:hover ~ .views {
-  opacity: 0;
-}
-
-.images:hover .views-image {
-  display: flex;
-}
-
 .views-image {
   display: none;
   flex-direction: column;
@@ -415,6 +399,15 @@ li p {
   .project-list {
     display: grid;
     grid-template-columns: 350px 350px;
+  }
+  .images:hover .large {
+    opacity: 30%;
+  }
+  .views {
+    display: none;
+  }
+  .images:hover .views-image {
+    display: flex;
   }
 
   /* ------------ */
