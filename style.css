@@ -86,7 +86,11 @@ header article p {
   margin-bottom: 24px;
 }
 
-.contact, .view {
+.contact {
+  margin-bottom: 80px;
+}
+
+.contact, .view, .view-img {
   display: inline-block;
   color: white;
   font-size: 16px;
@@ -95,10 +99,9 @@ header article p {
   letter-spacing: 2.286px;
   border-bottom: 2px solid #4EE1A0;
   padding-bottom: 10px;
-  margin-bottom: 80px;
 }
 
-.contact:hover, .view:hover {
+.contact:hover, .view:hover, .view-img:hover {
   color: #4EE1A0;
 }
 
@@ -189,6 +192,10 @@ li p {
   margin-right: 30px;
 }
 
+.project-list article {
+  margin-bottom: 80px;
+}
+
 .images {
   position: relative;
   display: flex;
@@ -196,8 +203,16 @@ li p {
   justify-content: center;
 }
 
+.views {
+  transition: 200ms;
+}
+
 .images:hover .large {
   opacity: 30%;
+}
+
+.images:hover ~ .views {
+  opacity: 0;
 }
 
 .images:hover .views-image {
@@ -212,13 +227,13 @@ li p {
   position: absolute;
 }
 
-.views-image .view {
+.views-image .view-img {
   z-index: 1;
   margin-right: 0;
   margin-bottom: 0;
 }
 
-.views-image .view:not(:last-child) {
+.views-image .view-img:not(:last-child) {
   margin-bottom: 40px;
 }
 
