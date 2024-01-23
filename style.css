@@ -57,13 +57,13 @@ li {
 
 .rings {
   position: absolute;
-  top: 15vh;
+  top: 120px;
   left: -265px;
 }
 
 .circle {
   position: absolute;
-  top: 26vh;
+  top: 220px;
   right: -60px;
 }
 
@@ -284,7 +284,7 @@ li p {
     margin-bottom: 0;
   }
   .circle {
-    top: 46vh;
+    top: 390px;
     z-index: 1;
   }
 
@@ -360,7 +360,7 @@ li p {
     display: none;
   }
   .circle {
-    top: 53.5vh;
+    top: 452px;
     z-index: 1;
   }
 
