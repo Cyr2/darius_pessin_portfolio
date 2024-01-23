@@ -11,6 +11,9 @@ body {
   color: white;
 }
 
+
+/* HEADER */
+
 nav {
   display: flex;
   flex-direction: column;
@@ -29,6 +32,14 @@ header {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+}
+
+#tablet {
+  display: none;
+}
+
+#desktop {
+  display: none;
 }
 
 li {
@@ -91,6 +102,8 @@ header article p {
   color: #4EE1A0;
 }
 
+/* ------------ */
+
 hr {
   width: 90vw;
   height: 1px;
@@ -98,6 +111,8 @@ hr {
   border: none;
   margin-bottom: 40px;
 }
+
+/* EXPERIENCE */
 
 .exp {
   display: flex;
@@ -114,13 +129,10 @@ li p {
   margin-bottom: 24px;
 }
 
-#tablet {
-  display: none;
-}
+/* ------------ */
 
-#desktop {
-  display: none;
-}
+
+/* PROJECTS */
 
 .title {
   width: 100%;
@@ -210,10 +222,18 @@ li p {
   margin-bottom: 40px;
 }
 
+/* ------------ */
+
+
+/* Responsive Tablet */
+
 @media (min-width: 640px) {
   .project hr {
     display: none;
   }
+
+  /* HEADER */
+
   .small {
     display: none;
   }
@@ -221,20 +241,7 @@ li p {
     display: block;
     max-width: 280px;
   }
-  .title {
-    margin-top: 80px;
-    width: 90vw;
-    margin-bottom: 60px;
-  }
-  .project-list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 280px 280px;
-    justify-content: space-evenly;
-  }
-  .project h3 {
-    font-size: 22px;
-  }
+
   h1 {
     padding-left: 25px;
   }
@@ -280,6 +287,12 @@ li p {
     top: 46vh;
     z-index: 1;
   }
+
+  /* ------------ */
+
+
+  /* EXPERIENCE */
+
   .exp ul {
     width: 90%;
     column-gap: 120px;
@@ -287,21 +300,37 @@ li p {
     grid-template-columns: 180px 180px;
     text-align: start;
   }
-}
 
-@media (min-width: 768px) {
+  /* ------------ */
+
+
+  /* PROJECTS */
+
   .title {
-    margin-top: 140px;
-    max-width: 95%;
-    margin-bottom: 80px;
-  }
-  .large {
-    max-width: 350px;
+    margin-top: 80px;
+    width: 90vw;
+    margin-bottom: 60px;
   }
   .project-list {
+    width: 100%;
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 280px 280px;
+    justify-content: space-evenly;
   }
+  .project h3 {
+    font-size: 22px;
+  }
+
+  /* ------------ */
+}
+
+
+/* Responsive Desktop */
+
+@media (min-width: 768px) {
+
+  /* HEADER */
+
   h1 {
     padding-left: 90px;
   }
@@ -334,9 +363,15 @@ li p {
     top: 53.5vh;
     z-index: 1;
   }
+
+  /* ------------ */
+
   hr {
     width: 85%;
   }
+
+  /* EXPERIENCE */
+
   .exp ul {
     width: 85%;
     column-gap: 50px;
@@ -349,4 +384,24 @@ li p {
   li p {
     font-size: 16px;
   }
+
+  /* ------------ */
+
+  /* PROJECTS */
+
+  .title {
+    margin-top: 140px;
+    max-width: 95%;
+    margin-bottom: 80px;
+  }
+  .large {
+    max-width: 350px;
+  }
+  .project-list {
+    display: grid;
+    grid-template-columns: 350px 350px;
+  }
+
+  /* ------------ */
+
 }
