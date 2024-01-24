@@ -18,16 +18,19 @@
         <li><a href="https://linkedin.com"><img src="icon-linkedin.svg" alt="linkedin"></a></li>
         <li><a href="https://twitter.com"><img src="icon-twitter.svg" alt="twitter"></a></li>
       </ul>
+      <img id="mobile" src="image-profile-mobile.webp" alt="profile-tablet">
     </nav>
     <img src="pattern-rings.svg" alt="rings" class="rings">
     <img src="pattern-circle.svg" alt="circle" class="circle">
     <section class="pres">
-      <article>
-        <h2>Nice to meet you!</h2>
-        <h2>I'm <span>Adam Keyes</span>.</h2>
-        <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
-        <a class="contact" href="mailto:email@example.com">CONTACT ME</a>
-      </article>
+      <div class="containerArt">
+        <article>
+          <h2>Nice to meet you!</h2>
+          <h2>I'm <span>Adam Keyes</span>.</h2>
+          <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+          <a class="contact" href="#contactForm">CONTACT ME</a>
+        </article>
+      </div>
       <img id="tablet" src="image-profile-tablet.webp" alt="profile-tablet">
       <img id="desktop" src="image-profile-desktop.webp" alt="profile-desktop">
     </section>
@@ -65,7 +68,7 @@
         <hr>
         <div class="title">
           <h2>Projects</h2>
-          <a class="contact proj" href="mailto:email@example.com">CONTACT ME</a>
+          <a class="contact proj" href="#contactForm">CONTACT ME</a>
         </div>
         <section class="project-list">
           <article>
@@ -189,6 +192,34 @@
         </section>
       </section>
     </section>
+    <section id="contactForm">
+      <div class="titleContact">
+        <h2>Contact</h2>
+        <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>  
+      </div>
+      <form action="">
+        <div class="input">
+          <input type="text" id="name" placeholder="NAME">
+          <input type="text" id="email" placeholder="EMAIL">
+          <textarea id="message" placeholder="MESSAGE"></textarea>
+        </div>
+        <div class="container">
+          <input type="submit" disabled="true" value="SEND MESSAGE">
+        </div>
+      </form>
+    </section>
   </main>
+  <div class="containerHr">
+    <hr>
+  </div>
+  <footer>
+    <h2>adamkeyes</h2>
+    <ul class="link">
+      <li><a href="https://github.com"><img src="icon-github.svg" alt="github"></a></li>
+      <li><a href="https://edenschool.fr"><img src="icon-custom.svg" alt="custom"></a></li>
+      <li><a href="https://linkedin.com"><img src="icon-linkedin.svg" alt="linkedin"></a></li>
+      <li><a href="https://twitter.com"><img src="icon-twitter.svg" alt="twitter"></a></li>
+    </ul>
+  </footer>
 </body>
 </html>
