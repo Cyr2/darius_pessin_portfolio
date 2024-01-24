@@ -15,6 +15,7 @@ body {
 /* HEADER */
 
 nav {
+  margin-top: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -68,7 +69,7 @@ li {
 .circle {
   z-index: 1;
   position: absolute;
-  top: 250px;
+  top: 272px;
   right: -60px;
 }
 
@@ -367,7 +368,7 @@ footer {
   }
   .pres {
     position: relative;
-    bottom: 52px;
+    bottom: 60px;
     display: flex;
     align-items: end;
     margin-bottom: 50px;
@@ -383,7 +384,7 @@ footer {
     margin-bottom: 0;
   }
   .circle {
-    top: 375px;
+    top: 388px;
     z-index: 1;
   }
 
@@ -472,7 +473,7 @@ footer {
     display: none;
   }
   .circle {
-    top: 440px;
+    top: 450px;
     z-index: 1;
   }
 
